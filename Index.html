@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Manicure Keila Gisele</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ff99cc;
+      padding: 20px;
+      color: white;
+    }
+
+    .logo {
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    .info {
+      margin: 20px;
+      font-size: 18px;
+    }
+
+    table {
+      margin: auto;
+      background-color: white;
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+    }
+
+    th {
+      background-color: #ffccdd;
+    }
+
+    .buttons {
+      margin: 30px;
+    }
+
+    .btn {
+      background-color: #ff99cc;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      margin: 10px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e673a1;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo" class="logo"><br>
+    <h1>Manicure Keila Gisele/</h1>
+  </header>
+
+  <div class="info">
+    <p>📍  R. Prof. João Cândido Ferreira, 530 - sala10 - Centro, Apucarana - PR, 86800-100</p>
+    <p>📞 (43) 999173125</p>
+    <p>💅 Atendimento com hora marcada</p>
+  </div>
+
+  <table>
+    <tr>
+      <th>Serviço</th>
+      <th>Preço</th>
+    </tr>
+    <tr>
+      <td>Manicure simples</td>
+      <td>R$ 20,00</td>
+    </tr>
+    <tr>
+      <td>Manicure + Nail Art</td>
+      <td>R$ 30,00</td>
+    </tr>
+    <tr>
+      <td>Pedicure</td>
+      <td>R$ 25,00</td>
+    </tr>
+    <tr>
+      <td>Pé e mão</td>
+      <td>R$ 45,00</td>
+    </tr>
+  </table>
+
+  <div class="buttons">
+    <button class="btn" onclick="whatsapp()">📅 Marcar Horário</button>
+    <button class="btn" onclick="instagram()">📸 Ver no Instagram</button>
+  </div>
+
+  <footer>
+    Site feito com 💖 por Júlia Vitória
+  </footer>
+
+  <script>
+    function whatsapp() {
+      window.open("https://wa.me/5543999173125", "_blank");
+    }
+
+    function instagram() {
+      window.open("https://instagram.com/keila.gisele.queiroz", "_blank");
+    }
+  </script>
+
+</body>
+</html>
