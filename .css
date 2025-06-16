@@ -1,96 +1,343 @@
-body {
-  background-color: #f8f8f8;
-  font-family: 'Poppins', sans-serif;
+/* Reset e Base */
+* {
   margin: 0;
   padding: 0;
-  color: #333;
+  box-sizing: border-box;
 }
 
-header {
-  background-color: #f3c6d4;
-  padding: 30px 20px 20px;
-  text-align: center;
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe6f0 0%, #fff5f8 50%, #ffffff 100%);
+  color: #2c2c2c;
+  line-height: 1.6;
+  min-height: 100vh;
   position: relative;
 }
 
+/* Logo de fundo mais sutil */
+body::before {
+  content: '';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: 35%;
+  background-image: url('logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.03;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Header moderno */
+header {
+  background: linear-gradient(135deg, #cc007a, #ff4da6);
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(204, 0, 122, 0.3);
+}
+
 .logo {
-  width: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 header h1 {
   font-family: 'Great Vibes', cursive;
-  font-size: 2.5em;
-  color: #cc007a;
+  font-size: 3em;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
 }
 
+/* Container principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Seção de informações */
 .info {
   text-align: center;
-  padding: 20px;
-  font-size: 16px;
+  padding: 40px 20px;
+  font-size: 18px;
+  color: #555;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  margin: 30px auto;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards modernos */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  margin: 40px auto;
+  padding: 35px;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 
+    0 10px 30px rgba(204, 0, 122, 0.1),
+    0 1px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(204, 0, 122, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 15px 40px rgba(204, 0, 122, 0.15),
+    0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+.card h2 {
+  color: #cc007a;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.card h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(135deg, #cc007a, #ff4da6);
+  border-radius: 2px;
+}
+
+.card h3 {
+  color: #cc007a;
+  font-size: 1.3em;
+  margin: 25px 0 15px;
+}
+
+/* Listas */
+.card ul {
+  text-align: left;
+  padding-left: 25px;
+  margin: 20px 0;
+}
+
+.card ul li {
+  margin-bottom: 10px;
   color: #555;
 }
 
-.card {
-  background-color: #ffffff;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 700px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-.card h2, .card h3 {
-  color: #cc007a;
-}
-
-.card ul {
-  text-align: left;
-  padding-left: 20px;
-}
-
+/* Tabelas modernas */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
-}
-
-th, td {
-  border: 1px solid #eee;
-  padding: 12px;
-  text-align: left;
+  margin: 25px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 th {
-  background-color: #ffe6f0;
-  color: #cc007a;
+  background: linear-gradient(135deg, #cc007a, #ff4da6);
+  color: white;
+  padding: 15px 12px;
+  text-align: left;
+  font-weight: 600;
 }
 
+td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  background: white;
+  transition: background-color 0.3s ease;
+}
+
+tr:hover td {
+  background-color: #fef7fa;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* Seção de botões */
 .buttons {
   text-align: center;
-  margin: 30px;
+  margin: 40px 0;
+  padding: 20px;
 }
 
+/* Botões modernos */
 .btn {
-  background-color: #cc007a;
+  background: linear-gradient(135deg, #cc007a, #ff4da6);
   color: white;
   border: none;
-  padding: 14px 28px;
-  margin: 10px;
-  border-radius: 8px;
+  padding: 15px 30px;
+  border-radius: 50px;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s;
+  margin: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(204, 0, 122, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
 }
 
 .btn:hover {
-  background-color: #a6005f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(204, 0, 122, 0.4);
 }
 
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Botão WhatsApp especial */
+.btn-zap {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.btn-zap:hover {
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
   font-size: 14px;
   color: #999;
+  background: rgba(248, 248, 248, 0.8);
+  backdrop-filter: blur(10px);
+  margin-top: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+  
+  .card {
+    margin: 20px;
+    padding: 25px;
+  }
+  
+  .info {
+    margin: 20px;
+    padding: 30px 20px;
+    font-size: 16px;
+  }
+  
+  .btn {
+    padding: 12px 25px;
+    font-size: 15px;
+    margin: 8px;
+  }
+  
+  body::before {
+    width: 50%;
+    height: 50%;
+    opacity: 0.02;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 30px 15px;
+  }
+  
+  header h1 {
+    font-size: 1.8em;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .card {
+    margin: 15px;
+    padding: 20px;
+  }
+  
+  .card h2 {
+    font-size: 1.5em;
+  }
+  
+  table {
+    font-size: 14px;
+  }
+  
+  th, td {
+    padding: 10px 8px;
+  }
+}
+
+/* Animações suaves */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #cc007a, #ff4da6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #a6005f, #e6339a);
 }
