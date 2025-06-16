@@ -2,157 +2,81 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Manicure Keila Gisele</title>
-  <style>
-    body {
-      background-color: #ffe6f0;
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #ff99cc;
-      padding: 20px;
-      color: white;
-    }
-
-    .logo {
-      width: 100px;
-      border-radius: 50%;
-    }
-
-    .info {
-      margin: 20px;
-      font-size: 18px;
-    }
-
-    table {
-      margin: auto;
-      background-color: white;
-      border-collapse: collapse;
-      width: 80%;
-      max-width: 600px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 12px;
-    }
-
-    th {
-      background-color: #ffccdd;
-    }
-
-    .buttons {
-      margin: 30px;
-    }
-
-    .btn {
-      background-color: #ff99cc;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      margin: 10px;
-      border-radius: 10px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #e673a1;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #888;
-    }
-  </style>
+  <title>Keila Gisele Nails</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header>
-    <img src="logo.png" alt="Logo" class="logo"><br>
-    <h1>Manicure Keila Gisele/</h1>
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1>Keila Gisele Nails</h1>
   </header>
 
   <div class="info">
-    <p>📍  R. Prof. João Cândido Ferreira, 530 - sala10 - Centro, Apucarana - PR, 86800-100</p>
-    <p>📞 (43) 999173125</p>
+    <p>📍 R. Prof. João Cândido Ferreira, 530 - sala 10 - Centro, Apucarana - PR</p>
+    <p>📞 (43) 99917-3125</p>
     <p>💅 Atendimento com hora marcada</p>
   </div>
 
-  <table>
-    <tr>
-      <th>Serviço</th>
-      <th>Preço</th>
-    </tr>
-    <tr>
-      <td>Manicure simples</td>
-      <td>R$ 30,00</td>
-    </tr>
-    <tr>
-      <td>Esmaltação em gel/td>
-      <td>R$ 70,00</td>
-    </tr>
-    <tr>
-      <td>Pedicure</td>
-      <td>R$ 25,00</td>
-    </tr>
-    <tr>
-      <td>Pé e mão</td>
-      <td>R$ 65,00</td>
-    </tr>
-  </table>
+  <section class="card">
+    <h2>💅 Serviços</h2>
+    <table>
+      <tr>
+        <th>Serviço</th>
+        <th>Preço</th>
+      </tr>
+      <tr>
+        <td>Manicure simples</td>
+        <td>R$ 30,00</td>
+      </tr>
+      <tr>
+        <td>Esmaltação em gel</td>
+        <td>R$ 70,00</td>
+      </tr>
+      <tr>
+        <td>Pedicure</td>
+        <td>R$ 25,00</td>
+      </tr>
+      <tr>
+        <td>Pé e mão</td>
+        <td>R$ 65,00</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>💎 Pacote Mensal</h2>
+
+    <h3>📌 Regras</h3>
+    <ul>
+      <li>O valor do pacote deve ser pago no ato da aquisição.</li>
+      <li>Faltou sem avisar? Conta como feito.</li>
+      <li>Aviso com 1h de antecedência, se possível.</li>
+      <li>Atraso de até 10 minutos. Depois, o horário é perdido.</li>
+      <li>Pacote intransferível e válido por 30 dias.</li>
+    </ul>
+
+    <h3>💰 Valores</h3>
+    <ul>
+      <li>4 mãos e 2 pés: <s>R$190</s> → <strong>R$175</strong></li>
+      <li>2 mãos e 2 pés: <s>R$130</s> → <strong>R$120</strong></li>
+      <li>4 mãos e 1 pé: <s>R$155</s> → <strong>R$140</strong></li>
+      <li>4 mãos: <s>R$120</s> → <strong>R$110</strong></li>
+    </ul>
+
+    <button class="btn" onclick="window.open('https://wa.me/5543999173125?text=Oi%2C+quero+saber+mais+sobre+o+pacote+mensal+de+unhas!', '_blank')">
+      ✨ Quero contratar o pacote
+    </button>
+  </section>
 
   <div class="buttons">
-    <button class="btn" onclick="whatsapp()">📅 Marcar Horário</button>
-    <button class="btn" onclick="instagram()">📸 Ver no Instagram</button>
+    <button class="btn" onclick="window.open('https://wa.me/5543999173125', '_blank')">📅 Marcar Horário</button>
+    <button class="btn" onclick="window.open('https://instagram.com/keila.gisele.queiroz', '_blank')">📸 Ver no Instagram</button>
   </div>
 
   <footer>
     Site feito com 💖 por Júlia Vitória
   </footer>
-
-  <script>
-    function whatsapp() {
-      window.open("https://wa.me/5543999173125", "_blank");
-    }
-
-    function instagram() {
-      window.open("https://instagram.com/keila.gisele.queiroz", "_blank");
-    }
-  </script>
-
-</body><!-- Seção do Plano Mensal -->
-<div id="plano" class="info" style="margin-top: 40px;">
-  <h2 style="color:#cc007a;">💎 Pacote Mensal de Unhas</h2>
-
-  <h3>📌 Regras</h3>
-  <p style="max-width: 600px; margin: auto; text-align: left;">
-    • O valor do pacote deve ser pago no ato da aquisição.<br>
-    • Em caso de não comparecimento constará como serviço feito. Se possível, avisar com no mínimo 1h de antecedência.<br>
-    • Atraso de até 10 minutos. Após isso, o horário será perdido.<br>
-    • O pacote é intransferível – não pode ser usado por outra pessoa.<br>
-    • Deve ser consumido em até 30 dias. Após esse prazo, será encerrado.
-  </p>
-
-  <h3 style="margin-top: 20px;">💰 Valores</h3>
-  <ul style="text-align: left; max-width: 600px; margin: auto;">
-    <li>• 4 mãos e 2 pés de <s>R$190</s> por <strong>R$175</strong></li>
-    <li>• 2 mãos e 2 pés de <s>R$130</s> por <strong>R$120</strong></li>
-    <li>• 4 mãos e 1 pé de <s>R$155</s> por <strong>R$140</strong></li>
-    <li>• 4 mãos de <s>R$120</s> por <strong>R$110</strong></li>
-  </ul>
-
-  <br>
-  <button class="btn" onclick="window.open('https://wa.me/5543999173125?text=Oi%2C+quero+saber+mais+sobre+o+pacote+mensal+de+unhas!', '_blank')">
-    ✨ Quero contratar o pacote
-  </button>
-</div>
-
+</body>
 </html>
