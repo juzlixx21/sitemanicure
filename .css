@@ -1,24 +1,40 @@
 body {
-  background-color: #ffeaf3;
-  background-image: url('logo.png'); /* use a logo da sua mãe */
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #ffe6f0, #fff);
+  color: #2c2c2c;
+  background-image: url('logo.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 55%;
+  background-size: 45%;
   background-attachment: fixed;
-  opacity: 0.95;
 }
 
-.btn {
-  background-color: #cc007a;
-  color: white;
-  padding: 10px 20px;
+.card {
+  background: #fff;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(204, 0, 122, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+h2, h3 {
+  color: #cc007a;
+}
+
+.btn-zap {
+  background: #cc007a;
+  color: #fff;
   border: none;
-  border-radius: 25px;
+  padding: 12px 20px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
-  margin-top: 15px;
+  margin-top: 20px;
+  transition: 0.3s;
 }
 
-.btn:hover {
-  background-color: #ff80bf;
+.btn-zap:hover {
+  background: #ff4da6;
 }
