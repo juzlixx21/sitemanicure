@@ -2,88 +2,178 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Regras do Pacote</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter&display=swap" rel="stylesheet">
+  <title>Keila Gisele Nails</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1a1a1a;
+      background-image: url('logo-fundo.png'); /* Sua logo com opacidade baixa e fundo transparente */
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 60%;
+      background-attachment: fixed;
+      color: #f5f5f5;
     }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: url('./logo.png') no-repeat center center;
-      background-size: contain;
-      background-color: #121212;
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
+    header {
+      background-color: rgba(255, 153, 204, 0.9);
+      padding: 30px 20px;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
-    .card {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 2rem;
-      border-radius: 12px;
-      max-width: 600px;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    .logo {
+      width: 100px;
+      border-radius: 50%;
     }
 
     h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      margin-top: 10px;
     }
 
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
-      margin-bottom: 1.5rem;
-      color: #e6b7d4;
+    .info {
+      margin: 40px auto;
+      font-size: 1.2rem;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 16px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(12px);
     }
 
-    p {
-      line-height: 1.6;
-      margin-bottom: 1rem;
+    table {
+      margin: auto;
+      background: rgba(255,255,255,0.06);
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(8px);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    th, td {
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+
+    th {
+      background-color: rgba(255, 204, 221, 0.3);
+      color: #fff;
+    }
+
+    td {
+      color: #eee;
+    }
+
+    .buttons {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .btn {
+      background-color: #ff6699;
+      color: white;
+      border: none;
+      padding: 15px 35px;
+      margin: 10px;
+      border-radius: 30px;
       font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 14px rgba(255, 102, 153, 0.4);
     }
 
-    @media (max-width: 600px) {
-      .card {
-        padding: 1.5rem;
-      }
+    .btn:hover {
+      background-color: #ff85b3;
+      transform: translateY(-2px);
+    }
 
-      h1 {
-        font-size: 1.4rem;
-      }
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+    }
 
-      h2 {
-        font-size: 1.1rem;
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
       }
-
-      p {
-        font-size: 0.95rem;
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Regras de Pacote Mensal de</h1>
-    <h2>Unhas</h2>
-    <p>O valor do pacote deve ser pago no ato da aquisição.</p>
-    <p>Em caso de não comparecimento constará como serviço feito. Se possível, me avise com no mínimo 1 hora de antecedência, mas o serviço deverá ser feito ainda na mesma semana.</p>
-    <p>Atraso de no máximo 10 minutos. Excedendo esse tempo, perderá seu horário.</p>
-    <p>O pacote mensal é intransferível, não podendo colocar outra pessoa em seu lugar.</p>
-    <p>O pacote deve ser consumido no prazo de 30 dias. Passando esse período, o pacote será encerrado.</p>
+
+  <header>
+    <img src="logo.png" alt="Logo" class="logo"><br>
+    <h1>Keila Gisele Nails</h1>
+  </header>
+
+  <div class="info">
+    <p>📍 R. Prof. João Cândido Ferreira, 530 - sala10 - Centro, Apucarana - PR, 86800-100</p>
+    <p>📞 (43) 99917-3125</p>
+    <p>💅 Atendimento com hora marcada</p>
   </div>
+
+  <table>
+    <tr>
+      <th>Serviço</th>
+      <th>Preço</th>
+    </tr>
+    <tr>
+      <td>Manicure simples</td>
+      <td>R$ 30,00</td>
+    </tr>
+    <tr>
+      <td>Esmaltação em Gel</td>
+      <td>R$ 70,00</td>
+    </tr>
+    <tr>
+      <td>Pedicure</td>
+      <td>R$ 30,00</td>
+    </tr>
+    <tr>
+      <td>Pé e mão</td>
+      <td>R$ 65,00</td>
+    </tr>
+  </table>
+
+  <div class="buttons">
+    <button class="btn" onclick="whatsapp()">📅 Marcar Horário</button>
+    <button class="btn" onclick="instagram()">📸 Ver no Instagram</button>
+  </div>
+
+  <footer>
+    Site feito com 💖 por Júlia Vitória
+  </footer>
+
+  <script>
+    function whatsapp() {
+      window.open("https://wa.me/5543999173125", "_blank");
+    }
+
+    function instagram() {
+      window.open("https://instagram.com/keila.gisele.queiroz", "_blank");
+    }
+  </script>
+
 </body>
 </html>
