@@ -3,263 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keila Gisele Nails - Studio de Unhas Profissional</title>
-  <meta name="description" content="Studio de unhas profissional em Apucarana. Manicure, pedicure, esmaltação em gel e pacotes especiais. Agende seu horário!">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes:wght@400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="logo.png" type="image/png">
+  <title>Regras do Pacote</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url('./caminho-para-logo.png') no-repeat center center;
+      background-size: contain;
+      background-color: #121212;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: #e6b7d4;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <!-- Header Principal -->
-  <header>
-    <div class="header-content">
-      <img src="logo.png" alt="Logo Keila Gisele Nails" class="logo">
-      <h1>Keila Gisele Nails</h1>
-      <p class="subtitle">✨ Studio de Unhas Profissional ✨</p>
-    </div>
-  </header>
-
-  <!-- Container Principal -->
-  <main class="container">
-    
-    <!-- Informações de Contato -->
-    <section class="info-section">
-      <div class="info-card">
-        <div class="info-item">
-          <span class="info-icon">📍</span>
-          <div class="info-text">
-            <strong>Localização</strong>
-            <p>R. Prof. João Cândido Ferreira, 530 - sala 10<br>Centro, Apucarana - PR</p>
-          </div>
-        </div>
-        
-        <div class="info-item">
-          <span class="info-icon">📞</span>
-          <div class="info-text">
-            <strong>WhatsApp</strong>
-            <p>(43) 99917-3125</p>
-          </div>
-        </div>
-        
-        <div class="info-item">
-          <span class="info-icon">⏰</span>
-          <div class="info-text">
-            <strong>Atendimento</strong>
-            <p>Apenas com hora marcada</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção de Serviços -->
-    <section class="card services-card">
-      <h2>💅 Nossos Serviços</h2>
-      <div class="services-grid">
-        <div class="service-item">
-          <div class="service-header">
-            <h3>Manicure Simples</h3>
-            <span class="price">R$ 30,00</span>
-          </div>
-          <p>Cuidado completo das unhas das mãos</p>
-        </div>
-        
-        <div class="service-item highlight">
-          <div class="service-header">
-            <h3>Esmaltação em Gel</h3>
-            <span class="price">R$ 70,00</span>
-          </div>
-          <p>Durabilidade de até 3 semanas</p>
-          <span class="popular-badge">✨ Mais Procurado</span>
-        </div>
-        
-        <div class="service-item">
-          <div class="service-header">
-            <h3>Pedicure</h3>
-            <span class="price">R$ 25,00</span>
-          </div>
-          <p>Cuidado completo dos pés</p>
-        </div>
-        
-        <div class="service-item">
-          <div class="service-header">
-            <h3>Combo Pé e Mão</h3>
-            <span class="price">R$ 65,00</span>
-          </div>
-          <p>Economia de R$ 10,00</p>
-          <span class="discount-badge">💰 Desconto</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção de Pacotes -->
-    <section class="card package-card">
-      <h2>💎 Pacote Mensal VIP</h2>
-      <p class="package-intro">Economize até R$ 15,00 com nossos pacotes mensais!</p>
-      
-      <div class="package-grid">
-        <div class="package-item best-deal">
-          <h3>Premium</h3>
-          <div class="package-content">
-            <div class="package-includes">4 mãos + 2 pés</div>
-            <div class="package-prices">
-              <span class="old-price">R$ 190,00</span>
-              <span class="new-price">R$ 175,00</span>
-            </div>
-            <div class="savings">Economia: R$ 15,00</div>
-          </div>
-          <span class="best-badge">🏆 Melhor Custo-Benefício</span>
-        </div>
-        
-        <div class="package-item">
-          <h3>Completo</h3>
-          <div class="package-content">
-            <div class="package-includes">2 mãos + 2 pés</div>
-            <div class="package-prices">
-              <span class="old-price">R$ 130,00</span>
-              <span class="new-price">R$ 120,00</span>
-            </div>
-            <div class="savings">Economia: R$ 10,00</div>
-          </div>
-        </div>
-        
-        <div class="package-item">
-          <h3>Especial</h3>
-          <div class="package-content">
-            <div class="package-includes">4 mãos + 1 pé</div>
-            <div class="package-prices">
-              <span class="old-price">R$ 155,00</span>
-              <span class="new-price">R$ 140,00</span>
-            </div>
-            <div class="savings">Economia: R$ 15,00</div>
-          </div>
-        </div>
-        
-        <div class="package-item">
-          <h3>Básico</h3>
-          <div class="package-content">
-            <div class="package-includes">4 mãos</div>
-            <div class="package-prices">
-              <span class="old-price">R$ 120,00</span>
-              <span class="new-price">R$ 110,00</span>
-            </div>
-            <div class="savings">Economia: R$ 10,00</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Regras do Pacote -->
-      <div class="rules-section">
-        <h3>📋 Regras Importantes</h3>
-        <div class="rules-grid">
-          <div class="rule-item">
-            <span class="rule-icon">💳</span>
-            <p>Pagamento à vista na aquisição</p>
-          </div>
-          <div class="rule-item">
-            <span class="rule-icon">⚠️</span>
-            <p>Falta sem aviso = sessão perdida</p>
-          </div>
-          <div class="rule-item">
-            <span class="rule-icon">🕐</span>
-            <p>Avise mudanças com 1h de antecedência</p>
-          </div>
-          <div class="rule-item">
-            <span class="rule-icon">⏱️</span>
-            <p>Tolerância: até 10 min de atraso</p>
-          </div>
-          <div class="rule-item">
-            <span class="rule-icon">🔒</span>
-            <p>Pacote intransferível</p>
-          </div>
-          <div class="rule-item">
-            <span class="rule-icon">📅</span>
-            <p>Validade: 30 dias corridos</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cta-section">
-        <button class="btn btn-primary" onclick="openWhatsApp('pacote')">
-          ✨ Quero Contratar um Pacote
-        </button>
-      </div>
-    </section>
-
-    <!-- Botões de Ação -->
-    <section class="action-buttons">
-      <div class="buttons-grid">
-        <button class="btn btn-whatsapp" onclick="openWhatsApp('agendar')">
-          <span class="btn-icon">📅</span>
-          <span class="btn-text">Agendar Horário</span>
-        </button>
-        
-        <button class="btn btn-instagram" onclick="openInstagram()">
-          <span class="btn-icon">📸</span>
-          <span class="btn-text">Ver no Instagram</span>
-        </button>
-        
-        <button class="btn btn-location" onclick="openMaps()">
-          <span class="btn-icon">🗺️</span>
-          <span class="btn-text">Como Chegar</span>
-        </button>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <p>Site desenvolvido com 💖 por <strong>Júlia Vitória</strong></p>
-      <p class="copyright">© 2024 Keila Gisele Nails - Todos os direitos reservados</p>
-    </div>
-  </footer>
-
-  <!-- JavaScript -->
-  <script>
-    // Função para abrir WhatsApp com mensagens personalizadas
-    function openWhatsApp(tipo) {
-      const numero = '5543999173125';
-      let mensagem = '';
-      
-      if (tipo === 'pacote') {
-        mensagem = 'Oi! Gostaria de saber mais sobre os pacotes mensais de unhas. Pode me explicar melhor? 💅✨';
-      } else if (tipo === 'agendar') {
-        mensagem = 'Oi! Gostaria de agendar um horário para fazer as unhas. Vocês têm disponibilidade? 📅💅';
-      }
-      
-      const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-      window.open(url, '_blank');
-    }
-
-    // Função para abrir Instagram
-    function openInstagram() {
-      window.open('https://instagram.com/keila.gisele.queiroz', '_blank');
-    }
-
-    // Função para abrir Google Maps
-    function openMaps() {
-      const endereco = 'R. Prof. João Cândido Ferreira, 530 - sala 10, Centro, Apucarana - PR';
-      const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(endereco)}`;
-      window.open(url, '_blank');
-    }
-
-    // Animação suave ao carregar a página
-    document.addEventListener('DOMContentLoaded', function() {
-      const cards = document.querySelectorAll('.card, .info-section');
-      cards.forEach((card, index) => {
-        card.style.animationDelay = `${index * 0.2}s`;
-      });
-    });
-
-    // Efeito de paralaxe sutil no scroll
-    window.addEventListener('scroll', function() {
-      const scrolled = window.pageYOffset;
-      const parallax = document.querySelector('body::before');
-      if (parallax) {
-        const speed = scrolled * 0.1;
-      }
-    });
-  </script>
+  <div class="card">
+    <h1>Regras de Pacote Mensal de</h1>
+    <h2>Unhas</h2>
+    <p>O valor do pacote deve ser pago no ato da aquisição.</p>
+    <p>Em caso de não comparecimento constará como serviço feito. Se possível, me avise com no mínimo 1 hora de antecedência, mas o serviço deverá ser feito ainda na mesma semana.</p>
+    <p>Atraso de no máximo 10 minutos. Excedendo esse tempo, perderá seu horário.</p>
+    <p>O pacote mensal é intransferível, não podendo colocar outra pessoa em seu lugar.</p>
+    <p>O pacote deve ser consumido no prazo de 30 dias. Passando esse período, o pacote será encerrado.</p>
+  </div>
 </body>
 </html>
