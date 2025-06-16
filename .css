@@ -1,40 +1,96 @@
 body {
+  background-color: #f8f8f8;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #ffe6f0, #fff);
-  color: #2c2c2c;
-  background-image: url('logo.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 45%;
-  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-.card {
-  background: #fff;
-  max-width: 700px;
-  margin: 60px auto;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(204, 0, 122, 0.1);
-  backdrop-filter: blur(10px);
+header {
+  background-color: #f3c6d4;
+  padding: 30px 20px 20px;
+  text-align: center;
+  position: relative;
 }
 
-h2, h3 {
+.logo {
+  width: 90px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5em;
   color: #cc007a;
 }
 
-.btn-zap {
-  background: #cc007a;
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 30px;
-  cursor: pointer;
+.info {
+  text-align: center;
+  padding: 20px;
   font-size: 16px;
-  margin-top: 20px;
-  transition: 0.3s;
+  color: #555;
 }
 
-.btn-zap:hover {
-  background: #ff4da6;
+.card {
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.card h2, .card h3 {
+  color: #cc007a;
+}
+
+.card ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #eee;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #ffe6f0;
+  color: #cc007a;
+}
+
+.buttons {
+  text-align: center;
+  margin: 30px;
+}
+
+.btn {
+  background-color: #cc007a;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #a6005f;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #999;
 }
