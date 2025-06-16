@@ -5,8 +5,6 @@
   <title>Keila Gisele Nails</title>
   <style>
     body {
-      background: url('logo-fundo.png') center center no-repeat fixed;
-      background-size: 60%;
       background-color: #ffe6f0;
       font-family: 'Arial', sans-serif;
       text-align: center;
@@ -84,7 +82,7 @@
 
   <div class="info">
     <p>📍 R. Prof. João Cândido Ferreira, 530 - sala10 - Centro, Apucarana - PR, 86800-100</p>
-    <p>📞 (43) 99917-3125</p>
+    <p>📞 (43) 999173125</p>
     <p>💅 Atendimento com hora marcada</p>
   </div>
 
@@ -114,6 +112,26 @@
   <div class="buttons">
     <button class="btn" onclick="whatsapp()">📅 Marcar Horário</button>
     <button class="btn" onclick="instagram()">📸 Ver no Instagram</button>
+    <button class="btn" onclick="togglePlanos()">💼 Planos Mensais</button>
+  </div>
+
+  <div id="planos" style="display:none; text-align: left; max-width: 600px; margin: auto; background-color: #fff0f5; padding: 20px; border-radius: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.1); font-size: 16px;">
+    <h2 style="text-align:center; color:#d63384;">📋 Regras de Pacote Mensal de Unhas</h2>
+    <ul style="padding-left: 20px;">
+      <li>O valor do pacote deve ser pago no ato da aquisição.</li>
+      <li>Em caso de não comparecimento, constará como serviço feito. Se possível, avise com no mínimo 1 hora de antecedência.</li>
+      <li>O serviço deverá ser feito ainda na mesma semana.</li>
+      <li>Atraso de no máximo 10 minutos, passando disso, perde o horário.</li>
+      <li>O pacote mensal é intransferível, não podendo ser repassado a outra pessoa.</li>
+      <li>O pacote deve ser consumido em até 30 dias, após isso será encerrado.</li>
+    </ul>
+    <h2 style="text-align:center; color:#d63384;">💲 Valores</h2>
+    <ul style="padding-left: 20px;">
+      <li>4 mãos e 2 pés: de R$ 190 por R$ 175</li>
+      <li>2 mãos e 2 pés: de R$ 130 por R$ 120</li>
+      <li>4 mãos e 1 pé: de R$ 155 por R$ 140</li>
+      <li>4 mãos: de R$ 120 por R$ 110</li>
+    </ul>
   </div>
 
   <footer>
@@ -127,6 +145,11 @@
 
     function instagram() {
       window.open("https://instagram.com/keila.gisele.queiroz", "_blank");
+    }
+
+    function togglePlanos() {
+      var planos = document.getElementById("planos");
+      planos.style.display = planos.style.display === "none" ? "block" : "none";
     }
   </script>
 
